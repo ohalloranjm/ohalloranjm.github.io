@@ -1,1 +1,64 @@
 @import url(reset.css);
+
+body {
+    background-color: rgb(24, 24, 24);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: rgb(217, 217, 217);
+}
+
+a {
+    color: lightblue;
+}
+
+a:hover {
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+#h1-group {
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+#h1-tagline {
+    font-weight: bold;
+}
+
+#contact-info {
+    display: grid;
+    grid-template-areas:
+    "github linkedin"
+    "email email";
+    width: fit-content;
+    margin: auto;
+    font-size: 0.95em;
+    row-gap: 4px;
+}
+
+#github {
+    grid-area: github;
+}
+
+#linkedin {
+    grid-area: linkedin
+}
+
+#email {
+    grid-area: email;
+}
+
+h2 {
+    margin: 20px 0 10px;
+}
+
+#contact-info > li > a {
+    width: 100%;
+    display: block;
+}

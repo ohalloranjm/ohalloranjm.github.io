@@ -1,7 +1,12 @@
-div, span, h1, h2, h3, h4, h5, h6, p, img, blockquote, ul, ol, li, table, tr, th, td, article, section, main, header, footer {
+div, span, h1, h2, h3, h4, h5, h6, hgroup, p, img, blockquote, ul, ol, li, table, tr, th, td, article, section, main, header, footer {
     margin: 0;
     border: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
 }
 
 ul, ol, li {
