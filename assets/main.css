@@ -1,64 +1,133 @@
 @import url(reset.css);
 
-body {
-    background-color: rgb(24, 24, 24);
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    color: rgb(217, 217, 217);
+@media screen {
+
+    body {
+        background-color: rgb(24, 24, 24);
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        color: rgb(217, 217, 217);
+    }
+    
+    a {
+        color: rgb(100, 208, 255);
+    }
+    
+    a:hover {
+        color: white;
+    }
+
+    p {
+        margin-bottom: 0.8em;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+    hgroup {
+        margin-bottom: 0.8em;
+    }
+
+    h2 {
+        background-color: rgb(38, 38, 255);
+        border-radius: 2px;
+        padding: 5px;
+    }
+    
+    header {
+        text-align: center;
+    }
+
+    #h1-group {
+        margin-bottom: 10px;
+    }
+    
+    h1 {
+        margin-bottom: 5px;
+    }
+    
+    #h1-tagline {
+        font-weight: bold;
+    }
+    
+    #contact-info {
+        display: grid;
+        grid-template-areas:
+        "github linkedin"
+        "email email";
+        width: fit-content;
+        margin: auto;
+        font-size: 0.95em;
+        row-gap: 4px;
+    }
+    
+    #github {
+        grid-area: github;
+    }
+    
+    #linkedin {
+        grid-area: linkedin
+    }
+    
+    #email {
+        grid-area: email;
+    }
+    
+    h2 {
+        margin: 20px 0 10px;
+    }
+    
+    #contact-info > li > a {
+        width: 100%;
+        display: block;
+    }
+
 }
 
-a {
-    color: lightblue;
-}
+@media screen and (min-width: 600px) {
+    body {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px 10px;
+    }
 
-a:hover {
-    color: white;
-}
+    body > header {
+        margin-bottom: 20px;
+    }
 
-header {
-    text-align: center;
-}
+    body > main {
+        display: grid;
+        grid-template-areas: 
+        "about technologies"
+        "projects projects";
+        gap: 20px;
 
-#h1-group {
-    margin-bottom: 10px;
-}
+        grid-template-columns: 2fr 1fr;
+    }
 
-h1 {
-    margin-bottom: 5px;
-}
+    #about {
+        grid-area: about;
+    }
 
-#h1-tagline {
-    font-weight: bold;
-}
+    #technologies {
+        grid-area: technologies;
+    }
 
-#contact-info {
-    display: grid;
-    grid-template-areas:
-    "github linkedin"
-    "email email";
-    width: fit-content;
-    margin: auto;
-    font-size: 0.95em;
-    row-gap: 4px;
-}
+    #projects {
+        grid-area: projects;
+    }
 
-#github {
-    grid-area: github;
-}
+    body > main > section {
+        border: rgb(38, 38, 255) 1px solid;
+    }
 
-#linkedin {
-    grid-area: linkedin
-}
+    h2 {
+        margin: 0;
+    }
 
-#email {
-    grid-area: email;
-}
+    body > main > section > main {
+        padding: 15px;
+    }
 
-h2 {
-    margin: 20px 0 10px;
-}
-
-#contact-info > li > a {
-    width: 100%;
-    display: block;
 }
