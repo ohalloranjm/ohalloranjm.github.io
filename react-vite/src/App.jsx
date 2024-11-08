@@ -20,7 +20,8 @@ function App() {
         </a>
       ))}
 
-      <h2>Projects</h2>
+      <h2>{currProject.name}</h2>
+      <Project project={currProject} />
       <div className='project-buttons'>
         {projects.map(p => (
           <button
@@ -32,7 +33,6 @@ function App() {
           </button>
         ))}
       </div>
-      <Project project={currProject} />
 
       <h2>Passions</h2>
 
