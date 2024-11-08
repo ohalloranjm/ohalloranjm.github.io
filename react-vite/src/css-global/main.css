@@ -52,9 +52,36 @@ button:disabled:hover {
   text-align: center;
 }
 
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    'my-name presence'
+    'my-title resume';
+}
+
 .my-title {
   font-weight: bold;
   color: var(--txt2);
+  margin-bottom: 0;
+  grid-area: my-title;
+}
+
+.presence {
+  font-size: 2em;
+  margin: auto;
+  display: flex;
+  gap: 5px;
+}
+
+.presence-link {
+  margin-top: -5px;
+  padding: 0;
+  text-align: center;
+}
+
+.resume {
+  grid-area: resume;
 }
 
 .techbox {

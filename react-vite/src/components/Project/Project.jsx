@@ -1,5 +1,5 @@
 export default function Project({ project }) {
-  const { name, description, type, tech, links } = project;
+  const { description, type, tech, links } = project;
   return (
     <>
       {links.map(link => (

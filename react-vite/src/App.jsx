@@ -4,21 +4,28 @@ import projects from './data/projects.jsx';
 import { useState } from 'react';
 import tech from './data/tech.js';
 import links from './data/links.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function App() {
   const [project, setProject] = useState('Tatterpig');
   const currProject = projects.find(p => p.name === project);
 
   return (
-    <div className='all'>
-      <h1 className='center'>Joy O’Halloran</h1>
-      <p className='center my-title'>Full-Stack Software Engineer</p>
+    <>
+      <header className='page-header'>
+        <h1 className='page-title'>Joy O’Halloran</h1>
+        <p className='my-title'>Full-Stack Software Engineer</p>
 
-      {Object.entries(links).map(([name, link]) => (
-        <a href={link} key={name}>
-          {name}
-        </a>
-      ))}
+        <div className='presence'>
+          {links.map(({ to, fa, id }) => (
+            <a href={to} key={id} className={`presence-link pl-${id}`}>
+              <FontAwesomeIcon icon={fa} />
+            </a>
+          ))}
+        </div>
+
+        <div className='resume'>Resume</div>
+      </header>
 
       <ul>
         {tech.map((items, index) => {
@@ -56,7 +63,7 @@ function App() {
           {p.details}
         </>
       ))}
-    </div>
+    </>
   );
 }
 
