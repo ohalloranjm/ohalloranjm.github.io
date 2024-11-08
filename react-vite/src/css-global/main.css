@@ -27,6 +27,14 @@ p {
   margin-bottom: 0.7em;
 }
 
+a {
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--link);
+}
+
 button {
   display: block;
   border: 1px var(--txt2) solid;
@@ -58,6 +66,7 @@ button:disabled:hover {
   grid-template-areas:
     'my-name presence'
     'my-title resume';
+  margin-bottom: 15px;
 }
 
 .my-title {
@@ -76,12 +85,20 @@ button:disabled:hover {
 
 .presence-link {
   margin-top: -5px;
+  color: var(--txt);
   padding: 0;
-  text-align: center;
 }
 
 .resume {
   grid-area: resume;
+  font-size: 0.85em;
+  text-align: center;
+  border: 1px solid var(--txt);
+  border-radius: 5px;
+}
+
+.resume:hover {
+  border: 1px solid var(--link);
 }
 
 .techbox {
