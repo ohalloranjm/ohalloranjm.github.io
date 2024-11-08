@@ -19,13 +19,12 @@ const passions = [
     ),
   },
   {
-    name: 'Process Improvement',
+    name: 'Workflow Optimization',
     details: (
       <p>
-        I’m always looking for opportunities to improve my workflow. In my last
-        non-engineering role, I automated away enough of my own job to cut my
-        hours by 35% without any loss of productivity—frankly, it’s no wonder I
-        became a programmer.
+        I’m always looking to streamline my work. In my last non-engineering
+        role, I automated away enough of my job to cut my hours by 35% without
+        any loss of productivity—frankly, it’s no wonder I became a programmer.
       </p>
     ),
   },

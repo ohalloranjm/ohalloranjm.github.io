@@ -2,10 +2,12 @@ import Project from './components/Project/Project';
 import passions from './data/passions.jsx';
 import projects from './data/projects.jsx';
 import { useState } from 'react';
+import tech from './data/tech.js';
 
 function App() {
   const [project, setProject] = useState('Tatterpig');
   const currProject = projects.find(p => p.name === project);
+  // const { languages, db, backend, frontend, other } = tech;
 
   return (
     <>
@@ -32,6 +34,20 @@ function App() {
           {p.details}
         </>
       ))}
+
+      <h2>Technologies</h2>
+      {Object.entries(tech).map(([name, items]) => {
+        return (
+          <>
+            <h3>{name}</h3>
+            <ul>
+              {items.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </>
+        );
+      })}
     </>
   );
 }
