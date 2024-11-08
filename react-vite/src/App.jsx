@@ -1,5 +1,5 @@
 import Project from './components/Project/Project';
-import projects from '../data/projects';
+import projects from './data/projects.jsx';
 import { useState } from 'react';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         If I’m not coding or sleeping, I’m probably making AMVs, running
         tabletop RPGs, or spending time with my family.
       </p>
-      <h2>Portfolio</h2>
+      <h2>Projects</h2>
       {projects.map(p => (
         <button
           key={p.name}

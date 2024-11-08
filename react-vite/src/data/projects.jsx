@@ -1,6 +1,5 @@
 const projects = [
   {
-    id: 1,
     name: 'Tatterpig',
     type: 'Full-Stack Web App',
     tech: ['Express.js', 'Sequelize', 'React', 'Redux'],
@@ -13,14 +12,13 @@ const projects = [
       'A character sheet manager for tabletop roleplaying games. Create and customize sheets to represent characters, monsters, and other game pieces; edit them quickly with an intuitive UI.',
   },
   {
-    id: 2,
     name: 'Momo',
     type: 'Discord Bot',
     tech: ['Sequelize', 'Discord.js'],
     links: [
       {
         name: 'GitHub',
-        to: 'https://gituh.com/ohalloranjm/momo',
+        to: 'https://github.com/ohalloranjm/momo',
       },
       {
         name: 'Install',
@@ -33,6 +31,23 @@ const projects = [
         <em>Avatar Legends: The Roleplaying Game.</em>
       </>
     ),
+  },
+  {
+    name: 'BudgetMe',
+    type: 'Full-Stack Web App',
+    tech: ['Flask', 'SQLAlchemy', 'Alembic', 'React', 'Redux'],
+    links: [
+      {
+        name: 'GitHub',
+        to: 'https://github.com/ohalloranjm/budget-app',
+      },
+      {
+        name: 'Live',
+        to: 'https://budget-me.onrender.com',
+      },
+    ],
+    description:
+      'A personal finance app. Create monthly budgets; input transactions to track your by-budget and overall spending.',
   },
 ];
 
