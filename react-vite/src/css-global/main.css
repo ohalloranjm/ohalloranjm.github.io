@@ -53,3 +53,17 @@ button:disabled:hover {
   flex-direction: space-between;
   column-gap: 6px;
 }
+
+.techbox {
+  background-color: purple;
+  display: inline;
+  color: white;
+  padding: 1px 3px 3px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+ul {
+  margin-bottom: 15px;
+}

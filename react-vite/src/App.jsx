@@ -44,17 +44,19 @@ function App() {
       ))}
 
       <h2>Technologies</h2>
-      {tech.map(items => {
-        return (
-          <>
-            <ul>
+      <ul>
+        {tech.map((items, index) => {
+          return (
+            <>
               {items.map((item, i) => (
-                <li key={i}>{item}</li>
+                <li className={`techbox gradient-${index}`} key={i}>
+                  {item}
+                </li>
               ))}
-            </ul>
-          </>
-        );
-      })}
+            </>
+          );
+        })}
+      </ul>
     </div>
   );
 }
