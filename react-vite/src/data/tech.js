@@ -1,8 +1,8 @@
 const tech = [
   ['JavaScript', 'Python'],
-  ['SQL', 'SQLite', 'PostgreSQL', 'Sequelize', 'SQLAlchemy', 'Alembic'],
-  ['Node.js', 'Express', 'Flask', 'WTForms'],
   ['React', 'Redux', 'Recharts'],
+  ['Node.js', 'Express', 'Flask', 'WTForms'],
+  ['SQL', 'SQLite', 'PostgreSQL', 'Sequelize', 'SQLAlchemy', 'Alembic'],
   ['Git', 'GitHub', 'Postman', 'Render', 'Neon'],
 ];
 

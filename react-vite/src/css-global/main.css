@@ -58,29 +58,24 @@ button:disabled:hover {
 }
 
 .gradient-0 {
-  background-color: red;
+  background-color: purple;
   color: white;
 }
 
-.gradient-1 {
-  background-color: orange;
-}
-
-.gradient-2 {
-  background-color: yellow;
-  color: var(--txt);
-}
-
 .gradient-3 {
-  background-color: green;
+  background-color: rgb(224, 224, 0);
+}
+
+.gradient-1 {
+  background-color: rgb(236, 75, 0);
   color: white;
 }
 
 .gradient-4 {
-  background-color: blue;
+  background-color: rgb(75, 128, 0);
   color: white;
 }
 
-ul {
-  margin-bottom: 15px;
+.gradient-2 {
+  background-color: orange;
 }
