@@ -21,15 +21,17 @@ function App() {
       ))}
 
       <h2>Projects</h2>
-      {projects.map(p => (
-        <button
-          key={p.name}
-          onClick={() => setProject(p.name)}
-          disabled={project === p.name}
-        >
-          {p.name}
-        </button>
-      ))}
+      <div className='project-buttons'>
+        {projects.map(p => (
+          <button
+            key={p.name}
+            onClick={() => setProject(p.name)}
+            disabled={project === p.name}
+          >
+            {p.name}
+          </button>
+        ))}
+      </div>
       <Project project={currProject} />
 
       <h2>Passions</h2>
