@@ -35,7 +35,7 @@ const projects = [
   {
     name: 'BudgetMe',
     type: 'Full-Stack Web App',
-    tech: ['Flask', 'SQLAlchemy', 'Alembic', 'React', 'Redux'],
+    tech: ['Flask', 'SQLAlchemy', 'Alembic', 'React', 'Redux', 'Recharts'],
     links: [
       {
         name: 'GitHub',
@@ -48,6 +48,23 @@ const projects = [
     ],
     description:
       'A personal finance app. Create monthly budgets; input transactions to track your by-budget and overall spending.',
+  },
+  {
+    name: 'Waterbnb',
+    type: 'Full-Stack Web App',
+    tech: ['Express', 'Sequelize', 'React', 'Redux'],
+    links: [
+      {
+        name: 'GitHub',
+        to: 'https://github.com/ohalloranjm/airbnb-clone',
+      },
+      {
+        name: 'Live',
+        to: 'https://waterhome.onrender.com',
+      },
+    ],
+    description:
+      'Airbnb, but water-themed. Create, view, rate, and manage "spots" in a responsive React-based web app. ',
   },
 ];
 
