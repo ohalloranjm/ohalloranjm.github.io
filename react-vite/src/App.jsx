@@ -10,7 +10,7 @@ function App() {
   const currProject = projects.find(p => p.name === project);
 
   return (
-    <>
+    <div className='all'>
       <h1>Joy O’Halloran</h1>
       <p>Full-Stack Developer</p>
 
@@ -53,7 +53,7 @@ function App() {
           </>
         );
       })}
-    </>
+    </div>
   );
 }
 
