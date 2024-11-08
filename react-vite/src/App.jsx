@@ -11,14 +11,28 @@ function App() {
 
   return (
     <div className='all'>
-      <h1>Joy O’Halloran</h1>
-      <p>Full-Stack Developer</p>
+      <h1 className='center'>Joy O’Halloran</h1>
+      <p className='center my-title'>Full-Stack Software Engineer</p>
 
       {Object.entries(links).map(([name, link]) => (
         <a href={link} key={name}>
           {name}
         </a>
       ))}
+
+      <ul>
+        {tech.map((items, index) => {
+          return (
+            <>
+              {items.map((item, i) => (
+                <li className={`techbox gradient-${index}`} key={i}>
+                  {item}
+                </li>
+              ))}
+            </>
+          );
+        })}
+      </ul>
 
       <h2>{currProject.name}</h2>
       <Project project={currProject} />
@@ -42,21 +56,6 @@ function App() {
           {p.details}
         </>
       ))}
-
-      <h2>Technologies</h2>
-      <ul>
-        {tech.map((items, index) => {
-          return (
-            <>
-              {items.map((item, i) => (
-                <li className={`techbox gradient-${index}`} key={i}>
-                  {item}
-                </li>
-              ))}
-            </>
-          );
-        })}
-      </ul>
     </div>
   );
 }
