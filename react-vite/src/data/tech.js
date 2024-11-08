@@ -1,16 +1,9 @@
-const tech = {
-  Languages: ['JavaScript', 'Python'],
-  'Database Management': [
-    'SQL',
-    'SQLite',
-    'PostgreSQL',
-    'Sequelize',
-    'SQLAlchemy',
-    'Alembic',
-  ],
-  'Backend Routing': ['Express', 'Flask', 'WTForms'],
-  Frontend: ['React', 'Redux', 'Recharts'],
-  Other: ['Git', 'GitHub', 'Postman'],
-};
+const tech = [
+  ['JavaScript', 'Python'],
+  ['SQL', 'SQLite', 'PostgreSQL', 'Sequelize', 'SQLAlchemy', 'Alembic'],
+  ['Node.js', 'Express', 'Flask', 'WTForms'],
+  ['React', 'Redux', 'Recharts'],
+  ['Git', 'GitHub', 'Postman', 'Render', 'Neon'],
+];
 
 export default tech;
