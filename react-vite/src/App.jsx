@@ -41,7 +41,6 @@ function App() {
         })}
       </ul>
 
-      <h2>{currProject.name}</h2>
       <Project project={currProject} />
       <div className='project-buttons'>
         {projects.map(p => (

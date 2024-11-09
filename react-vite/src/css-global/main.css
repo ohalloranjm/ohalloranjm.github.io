@@ -1,7 +1,7 @@
 @import url(vars.css);
 
 body {
-  padding: 5px;
+  padding: 5px 8px;
   color: var(--txt);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--bg);
