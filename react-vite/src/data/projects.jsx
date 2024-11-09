@@ -1,5 +1,5 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 const projects = [
   {
@@ -10,14 +10,14 @@ const projects = [
       'https://github.com/ohalloranjm/tatterpig/raw/main/images/landing-page.png',
     links: [
       {
-        name: 'GitHub',
-        fa: faGithub,
-        to: 'https://github.com/ohalloranjm/tatterpig',
-      },
-      {
         name: 'Live',
         fa: faUpRightFromSquare,
         to: 'https://tatterpig.onrender.com/',
+      },
+      {
+        name: 'Repo',
+        fa: faGithub,
+        to: 'https://github.com/ohalloranjm/tatterpig',
       },
     ],
 
@@ -32,14 +32,14 @@ const projects = [
     tech: ['Sequelize', 'Discord.js'],
     links: [
       {
-        name: 'GitHub',
-        fa: faGithub,
-        to: 'https://github.com/ohalloranjm/momo',
+        name: 'Install',
+        fa: faPlus,
+        to: 'https://discord.com/oauth2/authorize?client_id=1279471541003878440&permissions=274877908992&integration_type=0&scope=applications.commands+bot',
       },
       {
-        name: 'Install',
-        fa: faUpRightFromSquare,
-        to: 'https://discord.com/oauth2/authorize?client_id=1279471541003878440&permissions=274877908992&integration_type=0&scope=applications.commands+bot',
+        name: 'Repo',
+        fa: faGithub,
+        to: 'https://github.com/ohalloranjm/momo',
       },
     ],
     description: (
@@ -57,14 +57,14 @@ const projects = [
       'https://github.com/ohalloranjm/budget-app/raw/main/images/landing.png',
     links: [
       {
-        name: 'GitHub',
-        fa: faGithub,
-        to: 'https://github.com/ohalloranjm/budget-app',
-      },
-      {
         name: 'Live',
         fa: faUpRightFromSquare,
         to: 'https://budget-me.onrender.com',
+      },
+      {
+        name: 'Repo',
+        fa: faGithub,
+        to: 'https://github.com/ohalloranjm/budget-app',
       },
     ],
     description:
@@ -78,14 +78,14 @@ const projects = [
     tech: ['Express', 'Sequelize', 'React', 'Redux'],
     links: [
       {
-        name: 'GitHub',
-        fa: faGithub,
-        to: 'https://github.com/ohalloranjm/airbnb-clone',
-      },
-      {
         name: 'Live',
         fa: faUpRightFromSquare,
         to: 'https://waterhome.onrender.com',
+      },
+      {
+        name: 'Repo',
+        fa: faGithub,
+        to: 'https://github.com/ohalloranjm/airbnb-clone',
       },
     ],
     description:

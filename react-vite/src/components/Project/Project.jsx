@@ -1,8 +1,6 @@
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import {
   faChevronLeft,
   faChevronRight,
-  faUpRightFromSquare,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import TechLabel from '../TechLabel/TechLabel';
@@ -41,11 +39,13 @@ export default function Project({ project, setProjectIdx, projectsLength }) {
 
       <p>{description}</p>
 
-      <div>
-        <FontAwesomeIcon icon={faUpRightFromSquare} />{' '}
-        <FontAwesomeIcon icon={faGithub} />
+      <div className='project-links'>
+        {links.map(({ name, fa, to }) => (
+          <a key={name} href={to}>
+            <FontAwesomeIcon icon={fa}></FontAwesomeIcon> {name}
+          </a>
+        ))}
       </div>
-      {links && null}
     </>
   );
 }
