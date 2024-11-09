@@ -11,12 +11,6 @@ function App() {
   const [projectIdx, setProjectIdx] = useState(0);
   const currProject = projects[projectIdx];
 
-  const omitArrow = projectIdx
-    ? projectIdx === projects.length - 1
-      ? 'right'
-      : null
-    : 'left';
-
   return (
     <>
       <header className='page-header'>
@@ -43,7 +37,7 @@ function App() {
       <Project
         project={currProject}
         setProjectIdx={setProjectIdx}
-        omit={omitArrow}
+        projectsLength={projects.length}
       />
 
       <h2>Passions</h2>
