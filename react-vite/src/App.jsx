@@ -5,6 +5,7 @@ import { useState } from 'react';
 import tech from './data/tech.js';
 import links from './data/links.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import TechLabel from './components/TechLabel/TechLabel.jsx';
 
 function App() {
   const [project, setProject] = useState('Tatterpig');
@@ -28,17 +29,9 @@ function App() {
       </header>
 
       <ul>
-        {tech.map((items, index) => {
-          return (
-            <>
-              {items.map((item, i) => (
-                <li className={`techbox gradient-${index}`} key={i}>
-                  {item}
-                </li>
-              ))}
-            </>
-          );
-        })}
+        {Object.entries(tech).map(([name, i]) => (
+          <TechLabel key={i} name={name} i={i} />
+        ))}
       </ul>
 
       <Project project={currProject} />
