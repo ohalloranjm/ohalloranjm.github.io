@@ -6,8 +6,7 @@ const projects = [
     name: 'Tatterpig',
     type: 'Full-Stack Web App',
     tech: ['Express', 'Sequelize', 'React', 'Redux'],
-    image:
-      'https://github.com/ohalloranjm/tatterpig/raw/main/images/landing-page.png',
+    image: '/tatterpig.jpg',
     links: [
       {
         name: 'Live',
@@ -27,8 +26,7 @@ const projects = [
   {
     name: 'Momo',
     type: 'Discord Bot',
-    image:
-      'https://github.com/ohalloranjm/momo/blob/main/guide/images/plead.png?raw=true',
+    image: '/knockoff_momo.jpg',
     tech: ['Sequelize', 'Discord.js'],
     links: [
       {
@@ -53,8 +51,7 @@ const projects = [
     name: 'BudgetMe',
     type: 'Full-Stack Web App',
     tech: ['Flask', 'SQLAlchemy', 'Alembic', 'React', 'Redux', 'Recharts'],
-    image:
-      'https://github.com/ohalloranjm/budget-app/raw/main/images/landing.png',
+    image: '/budget-me.jpg',
     links: [
       {
         name: 'Live',
@@ -73,8 +70,7 @@ const projects = [
   {
     name: 'Waterbnb',
     type: 'Full-Stack Web App',
-    image:
-      'https://github.com/ohalloranjm/airbnb-clone/raw/main/images/overview.png',
+    image: '/river.jpg',
     tech: ['Express', 'Sequelize', 'React', 'Redux'],
     links: [
       {
