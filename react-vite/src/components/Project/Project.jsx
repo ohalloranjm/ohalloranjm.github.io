@@ -22,7 +22,7 @@ export default function Project({ project, setProjectIdx, projectsLength }) {
         </button>
         <hgroup className='center'>
           <h2 className='project-name'>{name}</h2>
-          <div>{type}</div>
+          <div className='project-type'>{type}</div>
         </hgroup>
         <button onClick={handleClickRight}>
           <FontAwesomeIcon icon={faChevronRight} />
