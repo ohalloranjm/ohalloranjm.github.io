@@ -1,0 +1,12 @@
+@import url(../../css-global/vars.css);
+
+.project-scroll {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.project-scroll button {
+  background-color: inherit;
+  /* border: 0; */
+  color: var(--txt);
+}

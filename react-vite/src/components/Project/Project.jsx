@@ -2,6 +2,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import TechLabel from '../TechLabel/TechLabel';
+import './Project.css';
 
 export default function Project({ project, setProjectIdx, projectsLength }) {
   const { description, type, tech, links, name, image } = project;
@@ -13,10 +14,11 @@ export default function Project({ project, setProjectIdx, projectsLength }) {
 
   return (
     <>
-      <h2 className='center'>
-        <span onClick={handleClickLeft}>{'<'}</span> {name}{' '}
-        <span onClick={handleClickRight}>{'>'}</span>
-      </h2>
+      <div className='project-scroll'>
+        <button onClick={handleClickLeft}>{'<'}</button>
+        <h2 className='center'>{name} </h2>
+        <button onClick={handleClickRight}>{'>'}</button>
+      </div>
       <div>
         <FontAwesomeIcon icon={faUpRightFromSquare} />{' '}
         <FontAwesomeIcon icon={faGithub} /> {type}
