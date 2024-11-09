@@ -1,11 +1,24 @@
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+
 const projects = [
   {
     name: 'Tatterpig',
     type: 'Full-Stack Web App',
     tech: ['Express', 'Sequelize', 'React', 'Redux'],
+    image:
+      'https://github.com/ohalloranjm/tatterpig/raw/main/images/landing-page.png',
     links: [
-      { name: 'GitHub', to: 'https://github.com/ohalloranjm/tatterpig' },
-      { name: 'Live', to: 'https://tatterpig.onrender.com/' },
+      {
+        name: 'GitHub',
+        fa: faGithub,
+        to: 'https://github.com/ohalloranjm/tatterpig',
+      },
+      {
+        name: 'Live',
+        fa: faUpRightFromSquare,
+        to: 'https://tatterpig.onrender.com/',
+      },
     ],
 
     description:
@@ -14,14 +27,18 @@ const projects = [
   {
     name: 'Momo',
     type: 'Discord Bot',
+    image:
+      'https://github.com/ohalloranjm/momo/blob/main/guide/images/plead.png?raw=true',
     tech: ['Sequelize', 'Discord.js'],
     links: [
       {
         name: 'GitHub',
+        fa: faGithub,
         to: 'https://github.com/ohalloranjm/momo',
       },
       {
         name: 'Install',
+        fa: faUpRightFromSquare,
         to: 'https://discord.com/oauth2/authorize?client_id=1279471541003878440&permissions=274877908992&integration_type=0&scope=applications.commands+bot',
       },
     ],
@@ -36,13 +53,17 @@ const projects = [
     name: 'BudgetMe',
     type: 'Full-Stack Web App',
     tech: ['Flask', 'SQLAlchemy', 'Alembic', 'React', 'Redux', 'Recharts'],
+    image:
+      'https://github.com/ohalloranjm/budget-app/raw/main/images/landing.png',
     links: [
       {
         name: 'GitHub',
+        fa: faGithub,
         to: 'https://github.com/ohalloranjm/budget-app',
       },
       {
         name: 'Live',
+        fa: faUpRightFromSquare,
         to: 'https://budget-me.onrender.com',
       },
     ],
@@ -52,14 +73,18 @@ const projects = [
   {
     name: 'Waterbnb',
     type: 'Full-Stack Web App',
+    image:
+      'https://github.com/ohalloranjm/airbnb-clone/raw/main/images/overview.png',
     tech: ['Express', 'Sequelize', 'React', 'Redux'],
     links: [
       {
         name: 'GitHub',
+        fa: faGithub,
         to: 'https://github.com/ohalloranjm/airbnb-clone',
       },
       {
         name: 'Live',
+        fa: faUpRightFromSquare,
         to: 'https://waterhome.onrender.com',
       },
     ],

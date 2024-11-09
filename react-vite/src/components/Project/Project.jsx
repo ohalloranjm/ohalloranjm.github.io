@@ -1,21 +1,20 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import techList from '../../data/tech';
 import TechLabel from '../TechLabel/TechLabel';
 
 export default function Project({ project }) {
-  const { description, type, tech, links, name } = project;
+  const { description, type, tech, links, name, image } = project;
   return (
     <>
       <h2 className='center'>
-        {'<='} {name} {'=>'}
+        {'<'} {name} {'>'}
       </h2>
       <div>
         <FontAwesomeIcon icon={faUpRightFromSquare} />{' '}
         <FontAwesomeIcon icon={faGithub} /> {type}
       </div>
-      <img src='https://github.com/ohalloranjm/tatterpig/raw/main/images/landing-page.png' />
+      <img src={image} />
       {tech.map(name => (
         <TechLabel name={name} />
       ))}
