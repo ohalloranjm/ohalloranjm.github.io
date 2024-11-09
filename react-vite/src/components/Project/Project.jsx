@@ -31,7 +31,7 @@ export default function Project({ project, setProjectIdx, projectsLength }) {
         </button>
       </div>
 
-      <img src={image} />
+      <img className='project-image' src={image} />
       {tech.map(name => (
         <TechLabel key={name} name={name} />
       ))}
