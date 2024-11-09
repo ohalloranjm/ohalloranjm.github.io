@@ -102,33 +102,38 @@ button:disabled:hover {
 }
 
 .techbox {
-  background-color: purple;
   display: inline-block;
   padding: 1px 5px 3px;
   margin: 3px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  box-shadow: 3px 3px 2px gray;
 }
 
 .gradient-0 {
-  background-color: purple;
+  background-color: rgb(128, 0, 83);
   color: white;
+}
+
+.gradient-1 {
+  background-color: rgb(236, 35, 0);
+  color: white;
+}
+
+.gradient-2 {
+  background-color: orange;
 }
 
 .gradient-3 {
   background-color: rgb(224, 224, 0);
 }
 
-.gradient-1 {
-  background-color: rgb(236, 75, 0);
-  color: white;
-}
-
 .gradient-4 {
-  background-color: rgb(75, 128, 0);
+  background-color: rgb(6, 128, 0);
   color: white;
 }
 
-.gradient-2 {
-  background-color: orange;
+.gradient-5 {
+  background-color: rgb(16, 186, 186);
+  color: var(--txt);
 }

@@ -5,7 +5,6 @@ import { useState } from 'react';
 import tech from './data/tech.js';
 import links from './data/links.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const [project, setProject] = useState('Tatterpig');
@@ -25,10 +24,7 @@ function App() {
           ))}
         </div>
 
-        <a className='resume'>
-          Résumé
-          {/* <FontAwesomeIcon icon={faArrowDown} /> */}
-        </a>
+        <a className='resume'>Résumé</a>
       </header>
 
       <ul>
