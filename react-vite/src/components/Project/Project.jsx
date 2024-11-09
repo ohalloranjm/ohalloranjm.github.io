@@ -32,9 +32,13 @@ export default function Project({ project, setProjectIdx, projectsLength }) {
       </div>
 
       <img className='project-image' src={image} />
-      {tech.map(name => (
-        <TechLabel key={name} name={name} />
-      ))}
+
+      <ul className='project-tech'>
+        {tech.map(name => (
+          <TechLabel key={name} name={name} />
+        ))}
+      </ul>
+
       <p>{description}</p>
 
       <div>

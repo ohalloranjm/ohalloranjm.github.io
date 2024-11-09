@@ -26,3 +26,9 @@
   border: 5px groove var(--bg);
   margin-left: -5px;
 }
+
+.project-tech {
+  font-size: 13px;
+  width: fit-content;
+  margin: 0 auto 10px;
+}
