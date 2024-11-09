@@ -3,12 +3,12 @@ import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import TechLabel from '../TechLabel/TechLabel';
 
-export default function Project({ project }) {
+export default function Project({ project, setProjectIdx, omit }) {
   const { description, type, tech, links, name, image } = project;
   return (
     <>
       <h2 className='center'>
-        {'<'} {name} {'>'}
+        {omit === 'left' ? null : '<'} {name} {omit === 'right' ? null : '>'}
       </h2>
       <div>
         <FontAwesomeIcon icon={faUpRightFromSquare} />{' '}

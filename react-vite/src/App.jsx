@@ -8,8 +8,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import TechLabel from './components/TechLabel/TechLabel.jsx';
 
 function App() {
-  const [project, setProject] = useState('Tatterpig');
-  const currProject = projects.find(p => p.name === project);
+  const [projectIdx, setProjectIdx] = useState(0);
+  const currProject = projects[projectIdx];
+
+  const omitArrow = projectIdx
+    ? projectIdx === projects.length - 1
+      ? 'right'
+      : null
+    : 'left';
 
   return (
     <>
@@ -34,18 +40,11 @@ function App() {
         ))}
       </ul>
 
-      <Project project={currProject} />
-      <div className='project-buttons'>
-        {projects.map(p => (
-          <button
-            key={p.name}
-            onClick={() => setProject(p.name)}
-            disabled={project === p.name}
-          >
-            {p.name}
-          </button>
-        ))}
-      </div>
+      <Project
+        project={currProject}
+        setProjectIdx={setProjectIdx}
+        omit={omitArrow}
+      />
 
       <h2>Passions</h2>
 
