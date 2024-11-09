@@ -1,5 +1,9 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import {
+  faChevronLeft,
+  faChevronRight,
+  faUpRightFromSquare,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import TechLabel from '../TechLabel/TechLabel';
 import './Project.css';
@@ -15,9 +19,13 @@ export default function Project({ project, setProjectIdx, projectsLength }) {
   return (
     <>
       <div className='project-scroll'>
-        <button onClick={handleClickLeft}>{'<'}</button>
+        <button onClick={handleClickLeft}>
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
         <h2 className='center'>{name} </h2>
-        <button onClick={handleClickRight}>{'>'}</button>
+        <button onClick={handleClickRight}>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </button>
       </div>
       <div>
         <FontAwesomeIcon icon={faUpRightFromSquare} />{' '}
