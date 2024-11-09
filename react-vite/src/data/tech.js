@@ -8,6 +8,7 @@ const tech = {
   Express: 2,
   Flask: 2,
   WTForms: 2,
+  'Discord.js': 2,
   SQLite: 3,
   PostgreSQL: 3,
   Sequelize: 3,
@@ -15,7 +16,7 @@ const tech = {
   Alembic: 3,
   Git: 4,
   GitHub: 4,
-  Render: 4,
+  Render: 5,
   Neon: 5,
 };
 

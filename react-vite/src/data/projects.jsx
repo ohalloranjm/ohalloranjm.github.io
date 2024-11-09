@@ -2,7 +2,7 @@ const projects = [
   {
     name: 'Tatterpig',
     type: 'Full-Stack Web App',
-    tech: ['Express.js', 'Sequelize', 'React', 'Redux'],
+    tech: ['Express', 'Sequelize', 'React', 'Redux'],
     links: [
       { name: 'GitHub', to: 'https://github.com/ohalloranjm/tatterpig' },
       { name: 'Live', to: 'https://tatterpig.onrender.com/' },
