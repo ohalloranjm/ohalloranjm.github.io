@@ -22,20 +22,25 @@ export default function Project({ project, setProjectIdx, projectsLength }) {
         <button onClick={handleClickLeft}>
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
-        <h2 className='center'>{name} </h2>
+        <hgroup className='center'>
+          <h2 className='project-name'>{name}</h2>
+          <div>{type}</div>
+        </hgroup>
         <button onClick={handleClickRight}>
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
       </div>
-      <div>
-        <FontAwesomeIcon icon={faUpRightFromSquare} />{' '}
-        <FontAwesomeIcon icon={faGithub} /> {type}
-      </div>
+
       <img src={image} />
       {tech.map(name => (
         <TechLabel key={name} name={name} />
       ))}
       <p>{description}</p>
+
+      <div>
+        <FontAwesomeIcon icon={faUpRightFromSquare} />{' '}
+        <FontAwesomeIcon icon={faGithub} />
+      </div>
       {links && null}
     </>
   );

@@ -21,6 +21,7 @@ h6 {
 
 h1 {
   margin: 0;
+  text-shadow: 2px 2px 2px gray;
 }
 
 p {
@@ -108,6 +109,10 @@ button:disabled:hover {
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 3px 3px 2px gray;
+}
+
+.tech-master-list {
+  margin-bottom: 15px;
 }
 
 .gradient-0 {

@@ -3,6 +3,7 @@
 .project-scroll {
   display: grid;
   grid-template-columns: auto 1fr auto;
+  margin-bottom: 10px;
 }
 
 .project-scroll button {
@@ -11,4 +12,9 @@
   color: var(--txt);
   font-size: 1.5em;
   padding: 5px;
+}
+
+.project-name {
+  margin-bottom: 0;
+  margin-top: 0;
 }

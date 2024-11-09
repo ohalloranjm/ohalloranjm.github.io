@@ -28,7 +28,7 @@ function App() {
         <a className='resume'>Résumé</a>
       </header>
 
-      <ul>
+      <ul className='tech-master-list'>
         {Object.entries(tech).map(([name, i]) => (
           <TechLabel key={i} name={name} i={i} />
         ))}
