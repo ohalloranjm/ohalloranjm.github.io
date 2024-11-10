@@ -29,11 +29,15 @@ function App() {
         <a className='resume'>Résumé</a>
       </header>
 
+      <h2>Tools of the Trade</h2>
+
       <ul className='tech-master-list'>
         {Object.entries(tech).map(([name, i]) => (
           <TechLabel key={i} name={name} i={i} />
         ))}
       </ul>
+
+      <h2>What I’ve Made</h2>
 
       <Project
         project={currProject}
@@ -41,10 +45,10 @@ function App() {
         projectsLength={projects.length}
       />
 
-      <h2>Passions</h2>
+      <h2>What I’m Focused On</h2>
 
       {passions.map(p => (
-        <Passion passion={p} />
+        <Passion key={p.name} passion={p} />
       ))}
     </>
   );

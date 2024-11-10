@@ -25,7 +25,10 @@ h1 {
 }
 
 h2 {
-  text-align: center;
+  border-bottom: 2px solid var(--txt);
+  margin-top: 30px;
+  text-shadow: 1px 1px 1px gray;
+  font-size: 1em;
 }
 
 p {
@@ -71,7 +74,7 @@ button:disabled:hover {
   grid-template-areas:
     'my-name presence'
     'my-title resume';
-  margin-bottom: 15px;
+  margin-bottom: -5px;
 }
 
 .my-title {
