@@ -38,6 +38,7 @@ function App() {
       </section>
 
       <section className='block project-block'>
+        <h2>My Projects</h2>
         <Project
           project={currProject}
           setProjectIdx={setProjectIdx}
