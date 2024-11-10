@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-  text-shadow: 1px 1px 1px gray;
+  display: none;
 }
 
 p {
@@ -173,12 +173,19 @@ button:disabled:hover {
 }
 
 @media screen and (min-width: 1000px) {
+  h2 {
+    display: block;
+    margin: 0;
+    border-bottom: 1px dotted var(--txt);
+  }
+
   body {
     padding: 0;
+    background-color: var(--bg);
   }
 
   #root {
-    max-width: none;
+    max-width: 1200px;
     display: grid;
     grid-template-areas:
       'header header'
@@ -207,7 +214,6 @@ button:disabled:hover {
 
   .passions-block {
     grid-area: passions;
-    margin-top: 0;
   }
 
   .block {

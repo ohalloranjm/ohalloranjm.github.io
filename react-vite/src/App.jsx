@@ -46,6 +46,7 @@ function App() {
       </section>
 
       <section className='block passions-block'>
+        <h2>My Passions</h2>
         {passions.map(p => (
           <Passion key={p.name} passion={p} />
         ))}
