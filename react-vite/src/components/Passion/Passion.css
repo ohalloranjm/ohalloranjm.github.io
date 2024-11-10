@@ -1,3 +1,9 @@
 .passion-icon {
   font-size: 50px;
 }
+
+@media screen and (min-width: 1000px) {
+  .passion-icon {
+    font-size: 40px;
+  }
+}

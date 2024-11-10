@@ -171,3 +171,46 @@ button:disabled:hover {
     padding: 5px 20px;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  body {
+    padding: 0;
+  }
+
+  #root {
+    max-width: none;
+    display: grid;
+    grid-template-areas:
+      'header header'
+      'tech tech'
+      'projects passions';
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+  }
+
+  .page-header {
+    grid-area: header;
+  }
+
+  .tech-block {
+    grid-area: tech;
+    margin: 0;
+  }
+
+  .tech-master-list {
+    margin: 0;
+  }
+
+  .project-block {
+    grid-area: projects;
+  }
+
+  .passions-block {
+    grid-area: passions;
+    margin-top: 0;
+  }
+
+  .block {
+    border: 0;
+  }
+}

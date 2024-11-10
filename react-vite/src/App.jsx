@@ -29,7 +29,7 @@ function App() {
         <a className='resume'>Résumé</a>
       </header>
 
-      <section className='block'>
+      <section className='block tech-block'>
         <ul className='tech-master-list'>
           {Object.entries(tech).map(([name, i]) => (
             <TechLabel key={i} name={name} i={i} />
@@ -37,7 +37,7 @@ function App() {
         </ul>
       </section>
 
-      <section className='block'>
+      <section className='block project-block'>
         <Project
           project={currProject}
           setProjectIdx={setProjectIdx}
@@ -45,7 +45,7 @@ function App() {
         />
       </section>
 
-      <section className='block'>
+      <section className='block passions-block'>
         {passions.map(p => (
           <Passion key={p.name} passion={p} />
         ))}
