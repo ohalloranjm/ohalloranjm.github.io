@@ -29,27 +29,27 @@ function App() {
         <a className='resume'>Résumé</a>
       </header>
 
-      <h2>Tools of the Trade</h2>
+      <section className='block'>
+        <ul className='tech-master-list'>
+          {Object.entries(tech).map(([name, i]) => (
+            <TechLabel key={i} name={name} i={i} />
+          ))}
+        </ul>
+      </section>
 
-      <ul className='tech-master-list'>
-        {Object.entries(tech).map(([name, i]) => (
-          <TechLabel key={i} name={name} i={i} />
+      <section className='block'>
+        <Project
+          project={currProject}
+          setProjectIdx={setProjectIdx}
+          projectsLength={projects.length}
+        />
+      </section>
+
+      <section className='block'>
+        {passions.map(p => (
+          <Passion key={p.name} passion={p} />
         ))}
-      </ul>
-
-      <h2>What I’ve Made</h2>
-
-      <Project
-        project={currProject}
-        setProjectIdx={setProjectIdx}
-        projectsLength={projects.length}
-      />
-
-      <h2>What I’m Focused On</h2>
-
-      {passions.map(p => (
-        <Passion key={p.name} passion={p} />
-      ))}
+      </section>
     </>
   );
 }

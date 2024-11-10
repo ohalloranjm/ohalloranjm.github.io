@@ -20,7 +20,7 @@
 }
 
 .project-type {
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .project-image {
@@ -34,11 +34,12 @@
 .project-tech {
   font-size: 13px;
   width: fit-content;
-  margin: 0 auto 10px;
+  margin: 5px auto 10px;
 }
 
 .project-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
+  margin-top: 20px;
 }
