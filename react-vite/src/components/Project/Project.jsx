@@ -20,9 +20,9 @@ export default function Project({ project, setProjectIdx, projectsLength }) {
         <button onClick={handleClickLeft}>
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
-        <hgroup className='center'>
+        <hgroup>
           <h2 className='project-name'>{name}</h2>
-          <div className='project-type'>{type}</div>
+          <div className='project-type center'>{type}</div>
         </hgroup>
         <button onClick={handleClickRight}>
           <FontAwesomeIcon icon={faChevronRight} />

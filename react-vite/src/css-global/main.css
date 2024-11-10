@@ -24,6 +24,10 @@ h1 {
   text-shadow: 2px 2px 2px gray;
 }
 
+h2 {
+  text-align: center;
+}
+
 p {
   margin-bottom: 0.7em;
 }

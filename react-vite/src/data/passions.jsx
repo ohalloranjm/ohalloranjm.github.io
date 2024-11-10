@@ -1,6 +1,13 @@
+import {
+  faHandPointer,
+  faICursor,
+  faUsersCog,
+} from '@fortawesome/free-solid-svg-icons';
+
 const passions = [
   {
     name: 'UI/UX Design',
+    fa: faHandPointer,
     details: (
       <p>
         Misclick once, shame on you; misclick twice, shame on me. I build all my
@@ -11,6 +18,7 @@ const passions = [
   },
   {
     name: 'Technical Writing',
+    fa: faICursor,
     details: (
       <p>
         Documentation is a must. No matter what position I hold, I want to
@@ -20,6 +28,7 @@ const passions = [
   },
   {
     name: 'Workflow Optimization',
+    fa: faUsersCog,
     details: (
       <p>
         I’m always looking to streamline my work. In my last non-engineering

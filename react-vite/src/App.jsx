@@ -6,6 +6,7 @@ import tech from './data/tech.js';
 import links from './data/links.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import TechLabel from './components/TechLabel/TechLabel.jsx';
+import Passion from './components/Passion/Passion.jsx';
 
 function App() {
   const [projectIdx, setProjectIdx] = useState(0);
@@ -43,10 +44,7 @@ function App() {
       <h2>Passions</h2>
 
       {passions.map(p => (
-        <>
-          <h3>{p.name}</h3>
-          {p.details}
-        </>
+        <Passion passion={p} />
       ))}
     </>
   );
