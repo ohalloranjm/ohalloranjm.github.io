@@ -1,0 +1,45 @@
+@import url(../../css-global/vars.css);
+
+.project-scroll {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  margin-bottom: 10px;
+}
+
+.project-scroll button {
+  background-color: inherit;
+  border: 0;
+  color: var(--txt);
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+.project-name {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.project-type {
+  font-size: 0.8em;
+}
+
+.project-image {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+  border: 5px groove var(--txt);
+  margin-left: -5px;
+}
+
+.project-tech {
+  font-size: 13px;
+  width: fit-content;
+  margin: 5px auto 10px;
+}
+
+.project-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  margin-top: 20px;
+}

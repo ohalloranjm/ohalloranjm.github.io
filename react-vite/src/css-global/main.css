@@ -1,0 +1,247 @@
+@import url(vars.css);
+
+body {
+  padding: 5px 8px;
+  color: var(--txt);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  color: var(--txt2);
+  margin: 0.7em 0 0.4em;
+}
+
+h1 {
+  margin: 0;
+  text-shadow: 2px 2px 2px gray;
+}
+
+h2 {
+  display: none;
+}
+
+p {
+  margin-bottom: 0.7em;
+}
+
+a {
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--link);
+}
+
+button {
+  display: block;
+  border: 1px var(--txt2) solid;
+  padding: 3px;
+  border-radius: 5px;
+  color: var(--bg);
+  background-color: var(--txt2);
+}
+
+button:hover {
+  background-color: var(--bg);
+  color: var(--txt2);
+}
+
+button:disabled,
+button:disabled:hover {
+  background-color: gray;
+  color: black;
+  border: 1px solid gray;
+}
+
+.center {
+  text-align: center;
+}
+
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    'my-name presence'
+    'my-title resume';
+  margin-bottom: -5px;
+}
+
+.my-title {
+  font-weight: bold;
+  color: var(--txt2);
+  margin-bottom: 0;
+  grid-area: my-title;
+}
+
+.presence {
+  font-size: 2em;
+  margin: auto;
+  display: flex;
+  gap: 5px;
+}
+
+.presence-link {
+  margin-top: -5px;
+  color: var(--txt);
+  padding: 0;
+}
+
+.resume {
+  grid-area: resume;
+  font-size: 0.85em;
+  text-align: center;
+  border: 1px solid var(--txt);
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+.resume:hover {
+  border: 1px solid var(--link);
+}
+
+.techbox {
+  display: inline-block;
+  padding: 1px 5px 3px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 3px 3px 2px gray;
+}
+
+.tech-master-list {
+  margin-bottom: 15px;
+}
+
+.gradient-0 {
+  background-color: rgb(128, 0, 83);
+  color: white;
+}
+
+.gradient-1 {
+  background-color: rgb(236, 35, 0);
+  color: white;
+}
+
+.gradient-2 {
+  background-color: orange;
+}
+
+.gradient-3 {
+  background-color: rgb(224, 224, 0);
+}
+
+.gradient-4 {
+  background-color: rgb(6, 128, 0);
+  color: white;
+}
+
+.gradient-5 {
+  background-color: rgb(16, 186, 186);
+  color: var(--txt);
+}
+
+.block {
+  margin: 20px 0;
+  border-top: 1px dotted var(--txt);
+  padding-top: 10px;
+}
+
+.block:first-of-type {
+  border-top: 0;
+  margin-top: 10px;
+}
+
+.page-footer {
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 30px;
+  border-top: 1px dotted var(--txt);
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-color: whitesmoke;
+  }
+
+  #root {
+    background-color: var(--bg);
+    max-width: 500px;
+    margin: auto;
+    padding: 5px 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h2 {
+    display: block;
+    margin: 0 0 15px;
+    border-bottom: 1px dotted var(--txt);
+  }
+
+  body {
+    padding: 0;
+    background-color: var(--bg);
+  }
+
+  #root {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-header,
+  .page-main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  body {
+    padding: 0 0 30px;
+  }
+
+  .page-main {
+    display: grid;
+    grid-template-areas:
+      'tech tech'
+      'projects passions';
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+  }
+
+  .tech-block {
+    grid-area: tech;
+    margin: 0;
+  }
+
+  .tech-master-list {
+    margin: 0;
+  }
+
+  .project-block {
+    grid-area: projects;
+  }
+
+  .passions-block {
+    grid-area: passions;
+  }
+
+  .block {
+    border: 0;
+  }
+
+  .page-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border: 0;
+  }
+}

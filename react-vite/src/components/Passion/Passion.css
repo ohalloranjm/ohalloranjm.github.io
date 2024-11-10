@@ -1,0 +1,30 @@
+.passion-icon {
+  font-size: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+  .passion {
+    display: grid;
+    grid-template-areas:
+      'passion-icon passion-details'
+      'passion-name passion-details';
+    grid-template-columns: 1fr 3fr;
+    margin: 15px 0 30px;
+    column-gap: 20px;
+  }
+
+  .passion-icon {
+    font-size: 40px;
+    grid-area: passion-icon;
+    margin: 0;
+  }
+
+  .passion-name {
+    grid-area: passion-name;
+    margin: 0;
+  }
+
+  .passion-details {
+    grid-area: passion-details;
+  }
+}
