@@ -158,3 +158,16 @@ button:disabled:hover {
   border-top: 0;
   margin-top: 10px;
 }
+
+@media screen and (min-width: 500px) {
+  body {
+    background-color: whitesmoke;
+  }
+
+  #root {
+    background-color: var(--bg);
+    max-width: 500px;
+    margin: auto;
+    padding: 5px 20px;
+  }
+}
