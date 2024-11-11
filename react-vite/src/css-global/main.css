@@ -194,7 +194,7 @@ button:disabled:hover {
   #root {
     max-width: none;
     margin: 0;
-    padding: 0;
+    padding: 20px 0 0;
   }
 
   .page-header,
